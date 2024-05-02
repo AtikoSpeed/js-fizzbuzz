@@ -1,19 +1,19 @@
 // TODO: Write your function in this file
 
 function fizzBuzz(lower, upper) {
-  finalArray = []
+  const finalArray = []
   for (let i = lower; i <= upper; i++) {
-    let pushIntoArray = ''
+    let singleAnswer = ''
     if (i % 3 === 0) {
-      pushIntoArray += 'Fizz'
+      singleAnswer += 'Fizz'
     }
     if (i % 5 === 0) {
-      pushIntoArray += 'Buzz'
+      singleAnswer += 'Buzz'
     }
     if (i % 3 !== 0 && i % 5 !== 0) {
-      pushIntoArray = i
+      singleAnswer = i
     }
-    finalArray.push(pushIntoArray)
+    finalArray.push(singleAnswer)
   }
   return finalArray
 }
